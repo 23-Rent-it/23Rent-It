@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hochzeits Chauffeur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #ff4081;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .package {
+            background-color: #1f1f1f;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .package h2 {
+            color: #ff4081;
+        }
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        .calendar, .booking-form {
+            background-color: #2b2b2b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hochzeits Chauffeur</h1>
+        <p>Erleben Sie Ihren besonderen Tag mit Stil in einem Ford Mustang</p>
+    </header>
+    <main>
+        <section>
+            <h2>Pakete</h2>
+            <div class="package">
+                <h2>Transfer von der Kirche zur Location</h2>
+                <p>Genießen Sie eine stilvolle Fahrt vom Ort der Trauung zur Feierlocation.</p>
+            </div>
+            <div class="package">
+                <h2>Transfer + Fotoshooting</h2>
+                <p>Zusätzlich zum Transfer erhalten Sie ein exklusives Fotoshooting mit dem Ford Mustang.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Kalender</h2>
+            <div class="calendar">
+                <p>Hier wird der Kalender eingebettet.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Buchung</h2>
+            <div class="booking-form">
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="package">Paket:</label><br>
+                    <select id="package" name="package">
+                        <option value="transfer">Transfer von der Kirche zur Location</option>
+                        <option value="photoshooting">Transfer + Fotoshooting</option>
+                    </select><br><br>
+                    <label for="date">Datum:</label><br>
+                    <input type="date" id="date" name="date"><br><br>
+                    <label for="message">Nachricht:</label><br>
+                    <textarea id="message" name="message"></textarea><br><br>
+                    <input type="submit" value="Buchen">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Kontaktieren Sie uns: info@hochzeitschauffeur.de</p>
+    </footer>
+</body>
+</html>
