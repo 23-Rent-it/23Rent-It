@@ -53,4 +53,57 @@ main {
 .gallery-grid img {
     width: 100%;
     height: auto;
-    border: 1px solid #001f3f; /* Antikbl
+    border: 1px solid #001f3f; /* Antikbl### styles.css (continued)
+
+```css
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #001f3f; /* Antikblau */
+}
+
+#contact .centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #001f3f; /* Antikblau */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#contact form label {
+    display: block;
+    margin-top: 10px;
+    color: white;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #001f3f; /* Antikblau */
+    background: black;
+    color: white;
+}
+
+#contact form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 1px solid #001f3f; /* Antikblau */
+    background: #001f3f; /* Antikblau */
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
