@@ -8,18 +8,57 @@
          url('fonts/special-elite-v18-latin-regular.ttf') format('truetype');
 }
 
+/* Neue Styles für die Kacheln */
+.tile-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 20px;
+    background-color: #474747; /* Hintergrundfarbe wie im Header */
+    position: relative;
+}
+
+.tile {
+    height: 200px; /* Standard-Höhe der Kacheln */
+    background-size: cover;
+    background-position: center;
+}
+
+.tile.large {
+    grid-column: span 2; /* Großes Bild links, spannt über 2 Spalten */
+}
+
+.tile.rectangular {
+    grid-row: span 2; /* Rechteckiges Bild, spannt über 2 Zeilen */
+}
+
+
+.overlay-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    max-width: 60%;
+    font-size: 18px;
+}
+
+/* Body-Hintergrund wie im Header */
 body {
     font-family: 'Special Elite', sans-serif;
     color: #fff;
-    background-color: #474747;
     margin: 0;
 }
+
+/* Restliche Styles bleiben unverändert */
+
+
 
 .header {
     position: relative;
     width: 100%;
-    height: 300px; /* Adjust the height based on your requirement */
-    background: url('Header.jpeg') no-repeat center center/cover;
+    height: 300px;
+    background: url('assets/pictures/Header.jpeg') no-repeat center center/cover;
 }
 
 .overlay-text {
@@ -37,6 +76,15 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
+
+.tile-container .overlay-text {
+    justify-content: start;
+    h2 {
+        margin-top: 180px;
+    }
+}
+
+
 
 header h1 {
     font-size: 50px;
@@ -97,7 +145,6 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
 }
 
 #contact form {
@@ -120,6 +167,7 @@ main {
     border: 1px solid #001f3f; /* Antikblau */
     background: black;
     color: white;
+    box-sizing: border-box; /* Ensure the padding and border are included in the element's total width and height */
 }
 
 #contact form button {
