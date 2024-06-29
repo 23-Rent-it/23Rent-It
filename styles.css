@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #111;
+    margin: 0;
+}
+
+header {
+    background: black;
+    color: #001f3f; /* Antikblau */
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-family: 'Peaky Blinders', serif;
+    font-size: 48px;
+    margin: 0;
+    color: #001f3f; /* Antikblau */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#home .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 1px solid #001f3f; /* Antikblau */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #001f3f; /* Antikbl
