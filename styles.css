@@ -1,36 +1,72 @@
+/* special-elite-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Special Elite';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/special-elite-v18-latin-regular.woff2') format('woff2'),
+         url('fonts/special-elite-v18-latin-regular.ttf') format('truetype');
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Special Elite', sans-serif;
     color: #fff;
     background-color: #474747;
     margin: 0;
 }
 
-header {
-    background: url(Header.jpeg);
-    color: #000000b8; /* weiß */
+.header {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust the height based on your requirement */
+    background: url('Header.jpeg') no-repeat center center/cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    padding: 10px 0;
 }
 
 header h1 {
-    font-family: 'Peaky Blinders', serif;
     font-size: 50px;
     margin: 0;
-    color: #dce0e3; /* weiß */
+    color: #ffffff; /* weiß */
+}
+
+nav {
+    margin-top: 2rem;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
     margin: 0 10px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: grey
 }
 
 nav ul li a {
-    color: #001f3f;
+    color: white;
     text-decoration: none;
 }
 
@@ -53,12 +89,6 @@ main {
 .gallery-grid img {
     width: 100%;
     height: auto;
-    border: 1px solid #001f3f; /* Antikbl### styles.css (continued)
-
-```css
-.gallery-grid img {
-    width: 100%;
-    height: auto;
     border: 1px solid #001f3f; /* Antikblau */
 }
 
@@ -66,14 +96,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  
 }
 
 #contact form {
     width: 100%;
     max-width: 600px;
-    border: 1px solid #001f3f; /* Antikblau */
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
 }
 
 #contact form label {
