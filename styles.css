@@ -1,22 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    color: white;
-    background-color: #111;
+    color: #fff;
+    background-color: #474747;
     margin: 0;
 }
 
 header {
-    background: black;
-    color: #001f3f; /* Antikblau */
+    background: url(Header.jpeg);
+    color: #000000b8; /* weiß */
     text-align: center;
     padding: 10px 0;
 }
 
 header h1 {
     font-family: 'Peaky Blinders', serif;
-    font-size: 48px;
+    font-size: 50px;
     margin: 0;
-    color: #001f3f; /* Antikblau */
+    color: #dce0e3; /* weiß */
 }
 
 nav ul {
@@ -30,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #00ff00;
+    color: #001f3f;
     text-decoration: none;
 }
 
