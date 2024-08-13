@@ -47,9 +47,8 @@ body {
 }
 
 header h3 {
-    top: 70px;
-    margin: 0;
-    color: #ffffff; /* Weiß */
+    margin-top: 50px; /* Anpassbarer Wert für die Positionierung */
+    color: #ffffff; /* Weißer Text für bessere Sichtbarkeit */
 }
 
 .tile-container .overlay-text h2 {
