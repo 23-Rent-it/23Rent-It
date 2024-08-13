@@ -108,21 +108,15 @@ main {
     grid-row: span 2; /* Rechteckiges Bild, spannt über 2 Zeilen */
 }
 
-/* Overlay für das Kontaktformular */
-#contact-form-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+/* Kontaktformular-Anpassungen */
+#contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Dunkle Überlagerung */
-    z-index: 2; /* Über den Bildern anzeigen */
+    min-height: 400px; /* Passt die Höhe des Containers an */
+    position: relative;
 }
 
-/* Zentriertes Formular */
 #contact .centered {
     width: 100%;
     max-width: 600px;
@@ -130,6 +124,8 @@ main {
     background-color: rgba(255, 255, 255, 0.8); /* Halbtransparentes weißes Hintergrund */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
     border-radius: 10px;
+    z-index: 2; /* Über den Bildern anzeigen */
+    position: relative; /* Behält die ursprüngliche Position */
 }
 
 /* Eingabefelder */
@@ -184,93 +180,6 @@ main {
     width: 100%;
     height: auto;
     border: 1px solid #001f3f; /* Antikblau */
-}
-
-#contact .centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact form {
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
-    color: white;
-}
-
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-#home .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border: 1px solid #001f3f; /* Antikblau */
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #001f3f; /* Antikblau */
-}
-
-#contact .centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact form {
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-}
-
-#contact form label {
-    display: block;
-    margin-top: 10px;
-    color: white;
-}
-
-#contact form input,
-#contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #001f3f; /* Antikblau */
-    background: black;
-    color: white;
-    box-sizing: border-box; /* Ensure the padding and border are included in the element's total width and height */
-}
-
-#contact form button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: 1px solid #001f3f; /* Antikblau */
-    background: #001f3f; /* Antikblau */
-    color: white;
-    cursor: pointer;
 }
 
 footer {
