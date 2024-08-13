@@ -47,8 +47,8 @@ body {
 }
 
 header h3 {
-    font-size: 40px;
-    margin-top: 170px;
+    top: 70px;
+    margin: 0;
     color: #ffffff; /* Weiß */
 }
 
