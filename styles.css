@@ -126,7 +126,7 @@ main {
     max-width: 600px;
     z-index: 10; /* Über den Kacheln anzeigen */
     padding: 20px;
-    pointer-events: none; /* Deaktiviert alle Pointer-Events im Overlay */
+    pointer-events: none; /* Dieser Wert kann entfernt oder angepasst werden */
 }
 
 #contact .centered {
@@ -134,7 +134,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
     border-radius: 10px;
     position: relative; /* Behält die ursprüngliche Position */
-    pointer-events: auto; /* Reaktiviert Pointer-Events im Formular */
+    pointer-events: auto; /* Sichert die Interaktivität */
 }
 
 /* Eingabefelder */
