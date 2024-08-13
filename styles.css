@@ -22,6 +22,7 @@ body {
     width: 100%;
     height: 300px;
     background: url('assets/pictures/Header.jpeg') no-repeat center center/cover;
+    z-index: 5; /* Header bleibt über anderen Elementen */
 }
 
 .overlay-text {
@@ -38,6 +39,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
+    z-index: 5; /* Header-Text bleibt über anderen Elementen */
 }
 
 .tile-container .overlay-text {
@@ -92,6 +94,7 @@ main {
     padding: 20px;
     background-color: #474747; /* Hintergrundfarbe wie im Header */
     position: relative;
+    z-index: 1; /* Kacheln unter dem Header */
 }
 
 .tile {
@@ -111,21 +114,22 @@ main {
 /* Kontaktformular-Overlay */
 #contact-form-overlay {
     position: absolute;
-    top: 50%;
+    top: 65%; /* Weiter nach unten verschieben (1/5 der Seite weiter unten) */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 600px;
     z-index: 10; /* Über den Kacheln anzeigen */
     padding: 20px;
+    pointer-events: none; /* Ermöglicht das Klicken durch das Overlay hindurch */
 }
 
 #contact .centered {
     background-color: rgba(255, 255, 255, 0.8); /* Halbtransparentes weißes Hintergrund */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
     border-radius: 10px;
-    z-index: 2; /* Über den Bildern anzeigen */
     position: relative; /* Behält die ursprüngliche Position */
+    pointer-events: auto; /* Ermöglicht Interaktion mit den Formularfeldern */
 }
 
 /* Eingabefelder */
