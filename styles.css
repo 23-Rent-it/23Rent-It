@@ -141,4 +141,50 @@ main {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid rgba(0, 31, 63, 0.5); /* Halbtransparenter Rand */
-    background-color: rgba(255, 255, 255, 0.5
+    background-color: rgba(255, 255, 255, 0.5); /* 50% transparentes Weiß */
+    color: black; /* Schwarze Schriftfarbe für Eingaben */
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* Senden-Button */
+#contact form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #001f3f; /* Antikblau */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #005f9f; /* Helleres Blau beim Hover */
+}
+
+/* Restliche Stile */
+#home .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 1px solid #001f3f; /* Antikblau */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #001f3f; /* Antikblau */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
