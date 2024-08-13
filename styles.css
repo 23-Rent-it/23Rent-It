@@ -150,8 +150,8 @@ main {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid rgba(0, 31, 63, 0.5); /* Halbtransparenter Rand */
-    background-color: rgba(255, 255, 255, 0.9); /* 90% transparentes Weiß */
-    color: black; /* Schwarze Schriftfarbe für Eingaben */
+    background-color: rgba(255, 255, 255, 0.50); /* 90% transparentes Weiß */
+    color: rgb(255, 255, 255); /* Schwarze Schriftfarbe für Eingaben */
     box-sizing: border-box;
     border-radius: 5px;
     pointer-events: auto; /* Sichert die Interaktivität */
