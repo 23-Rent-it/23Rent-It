@@ -114,7 +114,7 @@ main {
 /* Kontaktformular-Overlay */
 #contact-form-overlay {
     position: absolute;
-    top: 65%; /* Weiter nach unten verschieben (1/5 der Seite weiter unten) */
+    top: 85%; /* Weiter nach unten verschieben (1/5 der Seite weiter unten) */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
