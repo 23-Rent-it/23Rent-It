@@ -46,6 +46,11 @@ body {
     justify-content: start;
 }
 
+header h3 {
+    font-size: 50px;
+    margin-top: 70%;
+    color: #ffffff; /* Weiß */
+
 .tile-container .overlay-text h2 {
     margin-top: 180px;
 }
