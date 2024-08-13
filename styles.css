@@ -46,7 +46,7 @@ body {
     justify-content: start;
 }
 
-header h3 {
+.tile-container .overlay-text h3 {
     margin-top: 150px; /* Anpassbarer Wert für die Positionierung */
     color: #ffffff; /* Weißer Text für bessere Sichtbarkeit */
 }
