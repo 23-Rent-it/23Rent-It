@@ -48,8 +48,9 @@ body {
 
 header h3 {
     font-size: 40px;
-    margin-top: 160px%;
+    margin-top: 160px;
     color: #ffffff; /* Weiß */
+}
 
 .tile-container .overlay-text h2 {
     margin-top: 180px;
