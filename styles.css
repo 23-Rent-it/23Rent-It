@@ -108,19 +108,19 @@ main {
     grid-row: span 2; /* Rechteckiges Bild, spannt über 2 Zeilen */
 }
 
-/* Kontaktformular-Anpassungen */
-#contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px; /* Passt die Höhe des Containers an */
-    position: relative;
+/* Kontaktformular-Overlay */
+#contact-form-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    z-index: 10; /* Über den Kacheln anzeigen */
+    padding: 20px;
 }
 
 #contact .centered {
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Halbtransparentes weißes Hintergrund */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
     border-radius: 10px;
@@ -141,50 +141,4 @@ main {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid rgba(0, 31, 63, 0.5); /* Halbtransparenter Rand */
-    background-color: rgba(255, 255, 255, 0.7); /* Halbtransparenter Hintergrund */
-    color: black; /* Schwarze Schriftfarbe für Eingaben */
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-
-/* Senden-Button */
-#contact form button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #001f3f; /* Antikblau */
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-#contact form button:hover {
-    background-color: #005f9f; /* Helleres Blau beim Hover */
-}
-
-/* Restliche Stile */
-#home .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border: 1px solid #001f3f; /* Antikblau */
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #001f3f; /* Antikblau */
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
-    color: white;
-}
+    background-color: rgba(255, 255, 255, 0.5
