@@ -1,4 +1,4 @@
-/* special-elite-regular - latin */
+/* Schriftart Special Elite */
 @font-face {
     font-display: swap;
     font-family: 'Microsoft Yi Baiti';
@@ -8,52 +8,15 @@
          url('fonts/special-elite-v18-latin-regular.ttf') format('truetype');
 }
 
-/* Neue Styles für die Kacheln */
-.tile-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
-    padding: 20px;
-    background-color: #474747; /* Hintergrundfarbe wie im Header */
-    position: relative;
-}
-
-.tile {
-    height: 200px; /* Standard-Höhe der Kacheln */
-    background-size: cover;
-    background-position: center;
-}
-
-.tile.large {
-    grid-column: span 2; /* Großes Bild links, spannt über 2 Spalten */
-}
-
-.tile.rectangular {
-    grid-row: span 2; /* Rechteckiges Bild, spannt über 2 Zeilen */
-}
-
-
-.overlay-text h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.overlay-text p {
-    max-width: 60%;
-    font-size: 18px;
-}
-
-/* Body-Hintergrund wie im Header */
+/* Allgemeine Body-Stile */
 body {
     font-family: 'Special Elite', sans-serif;
     color: #fff;
     margin: 0;
+    background-color: #474747; /* Hintergrundfarbe wie im Header */
 }
 
-/* Restliche Styles bleiben unverändert */
-
-
-
+/* Header-Stile */
 .header {
     position: relative;
     width: 100%;
@@ -79,17 +42,16 @@ body {
 
 .tile-container .overlay-text {
     justify-content: start;
-    h2 {
-        margin-top: 180px;
-    }
 }
 
-
+.tile-container .overlay-text h2 {
+    margin-top: 180px;
+}
 
 header h1 {
     font-size: 50px;
     margin: 0;
-    color: #ffffff; /* weiß */
+    color: #ffffff; /* Weiß */
 }
 
 nav {
@@ -109,9 +71,141 @@ nav ul li {
     padding: 10px;
 }
 
-nav ul li a:hover {
-    color: grey
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
+
+nav ul li a:hover {
+    color: grey;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Kachel-Stile */
+.tile-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 20px;
+    background-color: #474747; /* Hintergrundfarbe wie im Header */
+    position: relative;
+}
+
+.tile {
+    height: 200px; /* Standard-Höhe der Kacheln */
+    background-size: cover;
+    background-position: center;
+}
+
+.tile.large {
+    grid-column: span 2; /* Großes Bild links, spannt über 2 Spalten */
+}
+
+.tile.rectangular {
+    grid-row: span 2; /* Rechteckiges Bild, spannt über 2 Zeilen */
+}
+
+/* Overlay für das Kontaktformular */
+#contact-form-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Dunkle Überlagerung */
+    z-index: 2; /* Über den Bildern anzeigen */
+}
+
+/* Zentriertes Formular */
+#contact .centered {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Halbtransparentes weißes Hintergrund */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
+    border-radius: 10px;
+}
+
+/* Eingabefelder */
+#contact form label {
+    display: block;
+    margin-top: 10px;
+    color: white; /* Weiße Schriftfarbe */
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid rgba(0, 31, 63, 0.5); /* Halbtransparenter Rand */
+    background-color: rgba(255, 255, 255, 0.7); /* Halbtransparenter Hintergrund */
+    color: black; /* Schwarze Schriftfarbe für Eingaben */
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+/* Senden-Button */
+#contact form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #001f3f; /* Antikblau */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #005f9f; /* Helleres Blau beim Hover */
+}
+
+/* Restliche Stile */
+#home .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: 1px solid #001f3f; /* Antikblau */
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #001f3f; /* Antikblau */
+}
+
+#contact .centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
 
 nav ul li a {
     color: white;
