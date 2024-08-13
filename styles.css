@@ -47,7 +47,7 @@ body {
 }
 
 .tile-container .overlay-text h3 {
-    margin-top: 140px; /* Anpassbarer Wert für die Positionierung */
+    margin-top: 120px; /* Anpassbarer Wert für die Positionierung */
     color: #ffffff; /* Weißer Text für bessere Sichtbarkeit */
 }
 
