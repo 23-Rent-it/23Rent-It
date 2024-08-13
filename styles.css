@@ -126,7 +126,7 @@ main {
     max-width: 600px;
     z-index: 10; /* Über den Kacheln anzeigen */
     padding: 20px;
-    pointer-events: none; /* Overlay blockiert keine Interaktionen */
+    pointer-events: none; /* Deaktiviert alle Pointer-Events im Overlay */
 }
 
 #contact .centered {
@@ -134,14 +134,14 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
     border-radius: 10px;
     position: relative; /* Behält die ursprüngliche Position */
-    pointer-events: auto; /* Ermöglicht Interaktion mit den Formularfeldern */
+    pointer-events: auto; /* Reaktiviert Pointer-Events im Formular */
 }
 
 /* Eingabefelder */
 #contact form label {
     display: block;
     margin-top: 10px;
-    color: white; /* Weiße Schriftfarbe */
+    color: black; /* Schwarze Schriftfarbe */
 }
 
 #contact form input,
@@ -150,10 +150,11 @@ main {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid rgba(0, 31, 63, 0.5); /* Halbtransparenter Rand */
-    background-color: rgba(255, 255, 255, 0.5); /* 50% transparentes Weiß */
+    background-color: rgba(255, 255, 255, 0.9); /* 90% transparentes Weiß */
     color: black; /* Schwarze Schriftfarbe für Eingaben */
     box-sizing: border-box;
     border-radius: 5px;
+    pointer-events: auto; /* Sichert die Interaktivität */
 }
 
 /* Senden-Button */
