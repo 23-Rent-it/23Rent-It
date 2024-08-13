@@ -21,20 +21,28 @@
             </nav>
         </div>
     </header>
+    
+    <main>
+        <h2>Kontaktieren Sie uns</h2>
+        <div class="tile-container">
+            <div style="background-image: url('assets/pictures/kontakt.jpeg');" class="tile large"></div>
+            <div style="background-image: url('assets/pictures/mustang_front.jpeg');" class="tile"></div>
+            <div class="overlay-text">
+                <p>Wir freuen uns darauf, von Ihnen zu hören. Füllen Sie das Kontaktformular aus oder rufen Sie uns direkt an.</p>
+            </div>
+        </div>
 
-    <main id="contact">
-        <div class="centered">
-            <h2>Kontakt</h2>
-            <form action="send_email.php" method="post">
+        <div id="contact" class="centered">
+            <form action="#" method="post">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
-
+                
                 <label for="email">E-Mail</label>
                 <input type="email" id="email" name="email" required>
-
+                
                 <label for="message">Nachricht</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
                 <button type="submit">Senden</button>
             </form>
         </div>
