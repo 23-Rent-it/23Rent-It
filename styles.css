@@ -141,7 +141,7 @@ main {
 #contact form label {
     display: block;
     margin-top: 10px;
-    color: black; /* Schwarze Schriftfarbe */
+    color: rgb(255, 255, 255); /* Schwarze Schriftfarbe */
 }
 
 #contact form input,
