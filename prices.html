@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRVE. - Preise</title>
+    <title>DRVE. - Pakete</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,23 +22,69 @@
         </div>
     </header>
 
-    <div>
-        <div class="tile-container">
-            <div style="background-image: url('assets/pictures/konni\ drivn.jpeg');" class="tile large"></div>
-            <div style="background-image: url('assets/pictures/innenraum\ fern.jpeg');" class="tile rectangular"></div>
-            <div style="background-image: url('assets/pictures/me\ drivn.jpeg');" class="tile"></div>
-            <div style="background-image: url('assets/pictures/mustang\ herbst\ vorne.jpeg');background-position:center 37%" class="tile large"></div>
-            <div style="background-image: url('assets/pictures/mustang\ panno.jpeg');" class="tile"></div>
-            <div style="background-image: url('assets/pictures/innenraum\ nah.jpeg');" class="tile"></div>
-            <div class="overlay-text">
-                <h3>Erleben Sie eine unvergessliche Fahrt in unserem Ford Mustang von 1965. Kontaktieren Sie uns für individuelle Angebote und Preise</h3>
+    <main>
+        <div class="package-container">
+            <div class="package-tile" data-package="Paket 1">
+                <div class="package-content">
+                    <h2>Paket 1</h2>
+                    <p>Beschreibung des Pakets 1...</p>
+                </div>
+                <div class="package-price">
+                    <p>€ 100</p>
+                </div>
             </div>
-         </div>
-    </div>
-
+            <div class="package-tile" data-package="Paket 2">
+                <div class="package-content">
+                    <h2>Paket 2</h2>
+                    <p>Beschreibung des Pakets 2...</p>
+                </div>
+                <div class="package-price">
+                    <p>€ 200</p>
+                </div>
+            </div>
+            <div class="package-tile" data-package="Paket 3">
+                <div class="package-content">
+                    <h2>Paket 3</h2>
+                    <p>Beschreibung des Pakets 3...</p>
+                </div>
+                <div class="package-price">
+                    <p>€ 300</p>
+                </div>
+            </div>
+            <div class="package-tile" data-package="Paket 4">
+                <div class="package-content">
+                    <h2>Paket 4</h2>
+                    <p>Beschreibung des Pakets 4...</p>
+                </div>
+                <div class="package-price">
+                    <p>€ 400</p>
+                </div>
+            </div>
+            <div class="package-tile" data-package="Paket 5">
+                <div class="package-content">
+                    <h2>Paket 5</h2>
+                    <p>Beschreibung des Pakets 5...</p>
+                </div>
+                <div class="package-price">
+                    <p>€ 500</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2024 DRVE.</p>
     </footer>
+
+    <script>
+        // JavaScript zum Kopieren des Pakettexts in das Nachricht-Feld im Kontaktformular
+        document.querySelectorAll('.package-tile').forEach(tile => {
+            tile.addEventListener('click', function() {
+                const packageText = this.querySelector('.package-content').innerText;
+                localStorage.setItem('selectedPackage', packageText);
+                window.location.href = 'contact.html';
+            });
+        });
+    </script>
 </body>
 </html>
