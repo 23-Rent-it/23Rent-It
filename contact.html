@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <!-- Anpassung hier -->
+    <!-- Kontaktformular -->
     <div id="contact-form-overlay">
         <div id="contact" class="centered">
             <form action="#" method="post">
@@ -57,5 +57,16 @@
     <footer>
         <p>&copy; 2024 DRVE.</p>
     </footer>
+
+    <script>
+        // Einfügen des ausgewählten Pakets in das Nachrichtenfeld
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const selectedPackage = localStorage.getItem('selectedPackage');
+            if (selectedPackage) {
+                document.getElementById('message').value = selectedPackage;
+                localStorage.removeItem('selectedPackage');
+            }
+        });
+    </script>
 </body>
 </html>
