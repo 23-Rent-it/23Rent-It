@@ -42,167 +42,37 @@ body {
     z-index: 5; /* Header-Text bleibt über anderen Elementen */
 }
 
-.tile-container .overlay-text {
-    justify-content: start;
-}
-
-.tile-container .overlay-text h3 {
-    margin-top: 80px; /* Anpassbarer Wert für die Positionierung */
-    color: #ffffff; /* Weißer Text für bessere Sichtbarkeit */
-}
-
-.tile-container .overlay-text h2 {
-    margin-top: 180px;
-}
-
-header h1 {
-    font-size: 50px;
-    margin: 0;
-    color: #ffffff; /* Weiß */
-}
-
-nav {
-    margin-top: 2rem;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-    padding: 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: grey;
-}
-
-main {
-    padding: 20px;
-}
-
-/* Kachel-Stile */
 .tile-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     padding: 20px;
-    background-color: #474747; /* Hintergrundfarbe wie im Header */
-    position: relative;
-    z-index: 1; /* Kacheln unter dem Header */
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Hintergrundbilder unter den Paketen */
 }
 
 .tile {
-    height: 200px; /* Standard-Höhe der Kacheln */
     background-size: cover;
     background-position: center;
 }
 
 .tile.large {
-    grid-column: span 2; /* Großes Bild links, spannt über 2 Spalten */
+    grid-column: span 2;
 }
 
 .tile.rectangular {
-    grid-row: span 2; /* Rechteckiges Bild, spannt über 2 Zeilen */
+    grid-row: span 2;
 }
 
-/* Kontaktformular-Overlay */
-#contact-form-overlay {
-    position: absolute;
-    top: 85%; /* Weiter nach unten verschieben (1/5 der Seite weiter unten) */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 600px;
-    z-index: 10; /* Über den Kacheln anzeigen */
-    padding: 20px;
-    pointer-events: none; /* Dieser Wert kann entfernt oder angepasst werden */
-}
-
-#contact .centered {
-    background-color: rgba(255, 255, 255, 0.8); /* Halbtransparentes weißes Hintergrund */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
-    border-radius: 10px;
-    position: relative; /* Behält die ursprüngliche Position */
-    pointer-events: auto; /* Sichert die Interaktivität */
-}
-
-/* Eingabefelder */
-#contact form label {
-    display: block;
-    margin-top: 10px;
-    color: rgb(255, 255, 255); /* Schwarze Schriftfarbe */
-}
-
-#contact form input,
-#contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid rgba(0, 31, 63, 0.5); /* Halbtransparenter Rand */
-    background-color: rgba(255, 255, 255, 0.50); /* 90% transparentes Weiß */
-    color: rgb(255, 255, 255); /* Schwarze Schriftfarbe für Eingaben */
-    box-sizing: border-box;
-    border-radius: 5px;
-    pointer-events: auto; /* Sichert die Interaktivität */
-}
-
-/* Senden-Button */
-#contact-form-overlay #contact form button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #001f3f; /* Antikblau */
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    pointer-events: auto; /* Sichert die Interaktivität */
-    z-index: 11; /* Überlagert andere Elemente */
-}
-
-#contact-form-overlay #contact form button:hover {
-    background-color: #005f9f; /* Helleres Blau beim Hover */
-}
-
-/* Restliche Stile */
-#home .overlay {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border: 1px solid #001f3f; /* Antikblau */
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-.gallery-grid img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #001f3f; /* Antikblau */
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
-    color: white;
-}
-
-/* Container für die Pakete */
+/* Pakete-Container und -Stile */
 .package-container {
+    position: relative;
+    z-index: 2; /* Pakete über den Hintergrundbildern */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +82,6 @@ footer {
     max-width: 800px;
 }
 
-/* Paket-Kacheln */
 .package-tile {
     display: flex;
     justify-content: space-between;
