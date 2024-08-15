@@ -43,10 +43,14 @@ body {
 }
 
 .tile-container h2 {
-    top: 70;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: 50%;
+    
+}
+
+.tile-container h3 {
+    width: 100%;
+    height: 50%;
     
 }
 
