@@ -119,11 +119,11 @@ main {
 /* Container für die Pakete */
 .package-container {
     position: absolute;
-    top: 65%; /* Positionierung im unteren Bereich der Seite */
+    top: 50%; /* Zentrieren auf der Seite */
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Breite etwas verringert */
-    max-width: 700px; /* Maximale Breite reduziert */
+    width: 90%;
+    max-width: 800px;
     z-index: 10; /* Über den Bildern */
     display: flex;
     flex-direction: column;
@@ -140,7 +140,6 @@ main {
     grid-template-rows: auto auto;
     padding: 20px;
     background-color: #474747; /* Hintergrundfarbe wie im Header */
-    margin-top: 100px; /* Platz unter dem Header */
 }
 
 .tile {
@@ -165,8 +164,8 @@ main {
     background-color: rgba(255, 255, 255, 0.8); /* Halbtransparentes weißes Hintergrund */
     border: 1px solid rgba(0, 31, 63, 0.5); /* Halbtransparenter Rand */
     border-radius: 10px;
-    margin-bottom: 15px; /* Weniger Abstand zwischen den Paketen */
-    padding: 15px; /* Kleinere Pakete */
+    margin-bottom: 20px;
+    padding: 20px;
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
     cursor: pointer;
@@ -179,13 +178,13 @@ main {
 
 .package-content {
     flex: 1;
-    margin-right: 15px; /* Weniger Platz zwischen Inhalt und Preis */
+    margin-right: 20px;
 }
 
 .package-price {
     border-left: 1px solid rgba(0, 31, 63, 0.5); /* Vertikale Unterteilung */
-    padding-left: 15px;
-    font-size: 1.3rem; /* Kleinere Schriftgröße */
+    padding-left: 20px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #001f3f;
 }
@@ -206,7 +205,7 @@ main {
     }
 
     .package-container {
-        top: 70%; /* Anpassung der Position für kleinere Bildschirme */
+        top: 60%; /* Anpassung der Position für kleinere Bildschirme */
     }
 }
 
