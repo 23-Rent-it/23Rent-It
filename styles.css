@@ -110,6 +110,7 @@ main {
     text-shadow: none;
     font-size: 2rem; /* Schriftgröße, kann individuell angepasst werden */
     text-align: center; /* Zentrierte Ausrichtung, kann individuell angepasst werden */
+    white-space: pre-wrap; /* Beibehalten von Zeilenumbrüchen und Leerzeichen */
 }
 
 /* Stile für den Text */
