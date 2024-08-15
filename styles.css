@@ -118,15 +118,43 @@ main {
 
 /* Container für die Pakete */
 .package-container {
-    position: relative;
-    z-index: 2; /* Pakete über den Kacheln */
+    position: absolute;
+    top: 65%; /* Positionierung im unteren Bereich der Seite */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Breite etwas verringert */
+    max-width: 700px; /* Maximale Breite reduziert */
+    z-index: 10; /* Über den Bildern */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px auto;
-    width: 90%;
-    max-width: 800px;
+}
+
+/* Hintergrund-Bild-Container */
+.tile-container {
+    position: relative;
+    z-index: 1; /* Hinter den Paketen */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 20px;
+    background-color: #474747; /* Hintergrundfarbe wie im Header */
+    margin-top: 100px; /* Platz unter dem Header */
+}
+
+.tile {
+    height: 200px; /* Standard-Höhe der Kacheln */
+    background-size: cover;
+    background-position: center;
+}
+
+.tile.large {
+    grid-column: span 2; /* Großes Bild links, spannt über 2 Spalten */
+}
+
+.tile.rectangular {
+    grid-row: span 2; /* Rechteckiges Bild, spannt über 2 Zeilen */
 }
 
 /* Paket-Kacheln */
@@ -137,8 +165,8 @@ main {
     background-color: rgba(255, 255, 255, 0.8); /* Halbtransparentes weißes Hintergrund */
     border: 1px solid rgba(0, 31, 63, 0.5); /* Halbtransparenter Rand */
     border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 15px; /* Weniger Abstand zwischen den Paketen */
+    padding: 15px; /* Kleinere Pakete */
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
     cursor: pointer;
@@ -151,15 +179,35 @@ main {
 
 .package-content {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 15px; /* Weniger Platz zwischen Inhalt und Preis */
 }
 
 .package-price {
     border-left: 1px solid rgba(0, 31, 63, 0.5); /* Vertikale Unterteilung */
-    padding-left: 20px;
-    font-size: 1.5rem;
+    padding-left: 15px;
+    font-size: 1.3rem; /* Kleinere Schriftgröße */
     font-weight: bold;
     color: #001f3f;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .package-tile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .package-price {
+        border-left: none;
+        border-top: 1px solid rgba(0, 31, 63, 0.5);
+        margin-top: 10px;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .package-container {
+        top: 70%; /* Anpassung der Position für kleinere Bildschirme */
+    }
 }
 
 /* Kontaktformular-Overlay */
