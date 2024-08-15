@@ -118,15 +118,42 @@ main {
 
 /* Container für die Pakete */
 .package-container {
-    position: relative;
-    z-index: 2; /* Pakete über den Kacheln */
+    position: absolute;
+    top: 50%; /* Zentrieren auf der Seite */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    z-index: 10; /* Über den Bildern */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px auto;
-    width: 90%;
-    max-width: 800px;
+}
+
+/* Hintergrund-Bild-Container */
+.tile-container {
+    position: relative;
+    z-index: 1; /* Hinter den Paketen */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 20px;
+    background-color: #474747; /* Hintergrundfarbe wie im Header */
+}
+
+.tile {
+    height: 200px; /* Standard-Höhe der Kacheln */
+    background-size: cover;
+    background-position: center;
+}
+
+.tile.large {
+    grid-column: span 2; /* Großes Bild links, spannt über 2 Spalten */
+}
+
+.tile.rectangular {
+    grid-row: span 2; /* Rechteckiges Bild, spannt über 2 Zeilen */
 }
 
 /* Paket-Kacheln */
@@ -160,6 +187,26 @@ main {
     font-size: 1.5rem;
     font-weight: bold;
     color: #001f3f;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .package-tile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .package-price {
+        border-left: none;
+        border-top: 1px solid rgba(0, 31, 63, 0.5);
+        margin-top: 10px;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .package-container {
+        top: 60%; /* Anpassung der Position für kleinere Bildschirme */
+    }
 }
 
 /* Kontaktformular-Overlay */
