@@ -107,6 +107,7 @@ main {
 .custom-box h2 {
     margin-top: 0;
     color: #001f3f; /* Standardfarbe, kann individuell angepasst werden */
+    text-shadow: none;
     font-size: 2rem; /* Schriftgröße, kann individuell angepasst werden */
     text-align: center; /* Zentrierte Ausrichtung, kann individuell angepasst werden */
 }
@@ -114,6 +115,7 @@ main {
 /* Stile für den Text */
 .custom-box p {
     color: #001f3f; /* Standardfarbe für den Text */
+    text-shadow: none;
     text-align: center; /* Textausrichtung, kann individuell angepasst werden */
     font-size: 1rem; /* Schriftgröße, kann individuell angepasst werden */
     margin: 0;
