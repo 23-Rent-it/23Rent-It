@@ -42,12 +42,7 @@ body {
     z-index: 5; /* Header-Text bleibt über anderen Elementen */
 }
 
-.tile-container h2 {
-    width: 100%;
-    height: 0%;
-    
-}
-    
+
 .tile-container h3 {
     width: 100%;
     height: 78%;
@@ -89,6 +84,41 @@ nav ul li a:hover {
 main {
     padding: 20px;
 }
+
+
+/* Allgemeine Stile für den Textbaustein */
+.custom-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Halbtransparentes Weiß */
+    border: 1px solid rgba(0, 31, 63, 0.5); /* Halbtransparenter Rand */
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
+    pointer-events: none; /* Nicht interaktiv */
+}
+
+/* Individuelle Stile für H2 */
+.custom-box h2 {
+    margin-top: 0;
+    color: #001f3f; /* Standardfarbe, kann individuell angepasst werden */
+    font-size: 2rem; /* Schriftgröße, kann individuell angepasst werden */
+    text-align: center; /* Zentrierte Ausrichtung, kann individuell angepasst werden */
+}
+
+/* Stile für den Text */
+.custom-box p {
+    color: #001f3f; /* Standardfarbe für den Text */
+    text-align: center; /* Textausrichtung, kann individuell angepasst werden */
+    font-size: 1rem; /* Schriftgröße, kann individuell angepasst werden */
+    margin: 0;
+}
+
 
 /* Kachel-Stile */
 .tile-container {
