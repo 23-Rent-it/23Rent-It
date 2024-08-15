@@ -120,6 +120,7 @@ main {
     text-align: center; /* Textausrichtung, kann individuell angepasst werden */
     font-size: 1rem; /* Schriftgröße, kann individuell angepasst werden */
     margin: 0;
+    white-space: pre-wrap; /* Beibehalten von Zeilenumbrüchen und Leerzeichen */
 }
 
 
