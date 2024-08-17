@@ -108,7 +108,7 @@ main {
     margin-top: 0;
     color: #001f3f; /* Standardfarbe, kann individuell angepasst werden */
     text-shadow: none;
-    font-size: 24pt; /* Schriftgröße, kann individuell angepasst werden */
+    font-size: 22pt; /* Schriftgröße, kann individuell angepasst werden */
     text-align: center; /* Zentrierte Ausrichtung, kann individuell angepasst werden */
     white-space: pre-wrap; /* Beibehalten von Zeilenumbrüchen und Leerzeichen */
 }
