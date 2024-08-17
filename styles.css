@@ -151,7 +151,7 @@ main {
     color: #001f3f; /* Standardfarbe für den Text */
     text-shadow: none;
     text-align: center; /* Textausrichtung, kann individuell angepasst werden */
-    font-size: 16pt; /* Schriftgröße, kann individuell angepasst werden */
+    font-size: 12pt; /* Schriftgröße, kann individuell angepasst werden */
     margin: 0;
     white-space: pre-wrap; /* Beibehalten von Zeilenumbrüchen und Leerzeichen */
 }
