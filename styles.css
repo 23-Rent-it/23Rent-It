@@ -108,7 +108,7 @@ main {
     margin-top: 0;
     color: #001f3f; /* Standardfarbe, kann individuell angepasst werden */
     text-shadow: none;
-    font-size: 4rem; /* Schriftgröße, kann individuell angepasst werden */
+    font-size: 2rem; /* Schriftgröße, kann individuell angepasst werden */
     text-align: center; /* Zentrierte Ausrichtung, kann individuell angepasst werden */
     white-space: pre-wrap; /* Beibehalten von Zeilenumbrüchen und Leerzeichen */
 }
@@ -118,7 +118,7 @@ main {
     color: #001f3f; /* Standardfarbe für den Text */
     text-shadow: none;
     text-align: center; /* Textausrichtung, kann individuell angepasst werden */
-    font-size: 2rem; /* Schriftgröße, kann individuell angepasst werden */
+    font-size: 1rem; /* Schriftgröße, kann individuell angepasst werden */
     margin: 0;
     white-space: pre-wrap; /* Beibehalten von Zeilenumbrüchen und Leerzeichen */
 }
