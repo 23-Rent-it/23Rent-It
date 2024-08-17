@@ -184,7 +184,7 @@ main {
 /* Container für die Pakete */
 .package-container {
     position: absolute;
-    top: 122%; /* Pakete im unteren Bereich der Seite */
+    top: 127%; /* Pakete im unteren Bereich der Seite */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 85%;
