@@ -20,12 +20,22 @@ body {
     font-family: 'Arial', sans-serif; /* Alternativer Font für das Euro-Zeichen */
 }
 
+/* Definiere globale Schriftgrößen als CSS-Variablen */
+:root {
+    --title-font-size: 1.5rem; /* 24px = 18pt */
+    --content-font-size: 1rem;  /* 16px = 12pt */
+
+    /* Neue Variablen für Paket-Schriftgrößen */
+    --package-title-font-size: 14pt; /* Standard-Schriftgröße für Titel */
+    --package-content-font-size: 12pt; /* Standard-Schriftgröße für Inhalt */
+}
+
 /* Beispiel für die Verwendung des Euro-Zeichens in den Preis-Elementen */
 .package-price {
     font-family: 'Michroma', sans-serif;
     border-left: 1px solid rgba(0, 31, 63, 0.5); /* Vertikale Unterteilung */
     padding-left: 20px;
-    font-size: var(--title-font-size);
+    font-size: var(--package-title-font-size); /* Verwendet Variable für die Titelgröße */
     font-weight: bold;
     color: #001f3f;
 }
@@ -171,12 +181,6 @@ main {
     grid-row: span 2; /* Rechteckiges Bild, spannt über 2 Zeilen */
 }
 
-/* Definiere globale Schriftgrößen als CSS-Variablen */
-:root {
-    --title-font-size: 1.5rem; /* 24px = 18pt */
-    --content-font-size: 1rem;  /* 16px = 12pt */
-}
-
 /* Container für die Pakete */
 .package-container {
     position: absolute;
@@ -219,14 +223,14 @@ main {
     flex: 1;
     margin-right: 20px;
     color: #001f3f;
-    font-size: var(--content-font-size); /* Schriftgröße für den Inhalt */
+    font-size: var(--package-content-font-size); /* Verwendet Variable für die Inhaltsgröße */
 }
 
 .package-price {
     font-family: 'Michroma', sans-serif; /* Font-Anpassung */
     border-left: 1px solid rgba(0, 31, 63, 0.5); /* Vertikale Unterteilung */
     padding-left: 20px;
-    font-size: var(--title-font-size); /* Schriftgröße für den Titel */
+    font-size: var(--package-title-font-size); /* Verwendet Variable für die Titelgröße */
     font-weight: bold;
     color: #001f3f;
 }
@@ -340,20 +344,4 @@ footer {
     padding: 20px;
     background: black;
     color: white;
-}
-
-/* Responsive Anpassungen */
-@media (max-width: 768px) {
-    .package-tile {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .package-price {
-        border-left: none;
-        border-top: 1px solid rgba(0, 31, 63, 0.5);
-        margin-top: 10px;
-        padding-left: 0;
-        padding-top: 10px;
-    }
 }
