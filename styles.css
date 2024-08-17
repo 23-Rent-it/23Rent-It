@@ -149,6 +149,12 @@ main {
     grid-row: span 2; /* Rechteckiges Bild, spannt über 2 Zeilen */
 }
 
+/* Definiere globale Schriftgrößen als CSS-Variablen */
+:root {
+    --title-font-size: 1.5rem; /* 24px = 18pt */
+    --content-font-size: 1rem;  /* 16px = 12pt */
+}
+
 /* Container für die Pakete */
 .package-container {
     position: absolute;
@@ -189,12 +195,13 @@ main {
     flex: 1;
     margin-right: 20px;
     color: #001f3f;
+    font-size: var(--content-font-size); /* Schriftgröße für den Inhalt */
 }
 
 .package-price {
     border-left: 1px solid rgba(0, 31, 63, 0.5); /* Vertikale Unterteilung */
     padding-left: 20px;
-    font-size: 1.5rem;
+    font-size: var(--title-font-size); /* Schriftgröße für den Titel */
     font-weight: bold;
     color: #001f3f;
 }
@@ -218,7 +225,6 @@ main {
         top: 75%; /* Anpassung der Position für kleinere Bildschirme */
     }
 }
-
 
 /* Allgemeine Body-Stile */
 body {
