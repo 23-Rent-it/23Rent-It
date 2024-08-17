@@ -15,6 +15,25 @@ body {
     background-color: #474747; /* Hintergrundfarbe wie im Header */
 }
 
+/* Spezielle Stile für das Euro-Zeichen */
+.euro {
+    font-family: 'Arial', sans-serif; /* Alternativer Font für das Euro-Zeichen */
+}
+
+/* Beispiel für die Verwendung des Euro-Zeichens in den Preis-Elementen */
+.package-price {
+    font-family: 'Michroma', sans-serif;
+    border-left: 1px solid rgba(0, 31, 63, 0.5); /* Vertikale Unterteilung */
+    padding-left: 20px;
+    font-size: var(--title-font-size);
+    font-weight: bold;
+    color: #001f3f;
+}
+
+.package-price .euro {
+    font-family: 'Arial', sans-serif; /* Alternativer Font für das Euro-Zeichen */
+}
+
 /* Header-Stile */
 .header {
     position: relative;
