@@ -26,8 +26,8 @@ body {
     --content-font-size: 1rem;  /* 16px = 12pt */
 
     /* Neue Variablen für Paket-Schriftgrößen */
-    --package-title-font-size: 14pt; /* Standard-Schriftgröße für Titel */
-    --package-content-font-size: 12pt; /* Standard-Schriftgröße für Inhalt */
+    --package-title-font-size: 12pt; /* Standard-Schriftgröße für Titel */
+    --package-content-font-size: 10pt; /* Standard-Schriftgröße für Inhalt */
 }
 
 /* Beispiel für die Verwendung des Euro-Zeichens in den Preis-Elementen */
