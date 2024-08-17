@@ -4,13 +4,13 @@
     font-family: 'Microsoft Yi Baiti';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/special-elite-v18-latin-regular.woff2') format('woff2'),
-         url('fonts/special-elite-v18-latin-regular.ttf') format('truetype');
+    src: url('fonts/Michroma-Regular.ttf') format('woff2'),
+         url('fonts/Michroma-Regular.ttf') format('truetype');
 }
 
 /* Allgemeine Body-Stile */
 body {
-    font-family: 'Special Elite', sans-serif;
+    font-family: 'Michroma-Regular', sans-serif;
     color: #fff;
     margin: 0;
     background-color: #474747; /* Hintergrundfarbe wie im Header */
