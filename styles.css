@@ -30,20 +30,6 @@ body {
     --package-content-font-size: 10pt; /* Standard-Schriftgröße für Inhalt */
 }
 
-/* Beispiel für die Verwendung des Euro-Zeichens in den Preis-Elementen */
-.package-price {
-    font-family: 'Michroma', sans-serif;
-    border-left: 1px solid rgba(0, 31, 63, 0.5); /* Vertikale Unterteilung */
-    padding-left: 20px;
-    font-size: var(--package-title-font-size); /* Verwendet Variable für die Titelgröße */
-    font-weight: bold;
-    color: #001f3f;
-}
-
-.package-price .euro {
-    font-family: 'Arial', sans-serif; /* Alternativer Font für das Euro-Zeichen */
-}
-
 /* Header-Stile */
 .header {
     position: relative;
@@ -70,12 +56,6 @@ body {
     z-index: 5; /* Header-Text bleibt über anderen Elementen */
 }
 
-.tile-container h3 {
-    width: 100%;
-    height: 85%;
-}
-
-/* Header-Überschrift */
 header h1 {
     font-family: 'Michroma', sans-serif; /* Font-Anpassung */
     font-size: 50px;
@@ -116,7 +96,7 @@ main {
     padding: 20px;
 }
 
-/* Allgemeine Stile für den Textbaustein */
+/* Stile für den Textbaustein */
 .custom-box {
     font-family: 'Michroma', sans-serif; /* Font-Anpassung */
     display: flex;
@@ -211,6 +191,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
     cursor: pointer;
     transition: transform 0.3s ease;
+    box-sizing: border-box;
 }
 
 .package-tile:hover {
@@ -273,8 +254,8 @@ main {
     background-color: rgba(255, 255, 255, 0.8); /* Halbtransparentes weißes Hintergrund */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optionaler Schatten */
     border-radius: 10px;
-    position: relative; /* Behält die ursprüngliche Position */
-    pointer-events: auto; /* Sichert die Interaktivität */
+    padding: 20px;
+    text-align: center;
 }
 
 /* Eingabefelder */
