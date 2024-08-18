@@ -238,18 +238,17 @@ main {
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
     .package-tile {
-        flex-direction: row; /* Stellt sicher, dass Preis und Inhalt nebeneinander bleiben */
-        align-items: center; /* Zentriert den Preis und den Inhalt vertikal */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .package-price {
-        border-left: 1px solid rgba(0, 31, 63, 0.5); /* Beibehaltung der linken Grenze */
-        border-top: none; /* Entfernt die obere Grenze */
-        margin-top: 0; /* Entfernt den oberen Abstand */
-        padding-left: 20px; /* Stellt sicher, dass der Abstand links beibehalten wird */
-        padding-top: 0; /* Entfernt den oberen Abstand */
+        border-left: none;
+        border-top: 1px solid rgba(0, 31, 63, 0.5);
+        margin-top: 10px;
+        padding-left: 0;
+        padding-top: 10px;
     }
-}
 
     .package-container {
         top: 75%; /* Anpassung der Position für kleinere Bildschirme */
