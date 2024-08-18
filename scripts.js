@@ -20,4 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
         showSlide(currentIndex);
     });
+
+    // Show the first slide by default
+    showSlide(0);
 });

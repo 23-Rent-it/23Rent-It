@@ -301,16 +301,17 @@ main {
 
 /* Swipe Gallery Styles */
 .swipe-gallery {
-    position: absolute; /* Statisch am unteren Teil positioniert */
+    position: absolute; /* Fixes position at the bottom of the page */
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 90%; /* Füllt 90% des unteren Teils */
-    background: rgba(0, 0, 0, 0.7); /* Halbdurchsichtiges Schwarz für den Hintergrund */
+    height: 90%; /* Covers 90% of the lower part of the page */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5); /* Schatteneffekt */
+    z-index: 10; /* Ensure it overlays other content */
+    overflow: hidden;
 }
 
 .gallery-wrapper {
@@ -319,19 +320,24 @@ main {
     height: 80%;
     display: flex;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
+    z-index: 11; /* Ensure images and controls appear above background */
 }
 
 .gallery-slider {
     display: flex;
     transition: transform 0.5s ease;
     width: 100%;
+    height: 100%; /* Ensure images fill the gallery wrapper */
+    z-index: 12; /* Ensure images are visible */
 }
 
 .gallery-slider img {
     min-width: 100%;
     height: auto;
     object-fit: cover;
+    z-index: 12; /* Ensure images are visible */
 }
 
 .gallery-nav {
@@ -343,8 +349,8 @@ main {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    z-index: 11;
     border-radius: 5px;
+    z-index: 13; /* Ensure buttons are visible above images */
 }
 
 .gallery-nav.prev {
