@@ -299,6 +299,72 @@ main {
     background-color: #005f9f; /* Helleres Blau beim Hover */
 }
 
+/* Swipe Gallery Styles */
+.swipe-gallery {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%; /* Füllt 90% des unteren Teils */
+    background: rgba(0, 0, 0, 0.7); /* Halbdurchsichtiges Schwarz für den Hintergrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Damit es über dem Rest der Seite liegt */
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5); /* Schatteneffekt */
+}
+
+.gallery-wrapper {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gallery-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.gallery-slider img {
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 31, 63, 0.8);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 11;
+    border-radius: 5px;
+}
+
+.gallery-nav.prev {
+    left: 10px;
+}
+
+.gallery-nav.next {
+    right: 10px;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .gallery-wrapper {
+        width: 95%;
+        height: 70%;
+    }
+}
+
+
 /* Restliche Stile */
 #home .overlay {
     background: rgba(0, 0, 0, 0.5);
