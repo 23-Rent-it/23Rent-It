@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     function showSlide(index) {
-        const offset = -index * 100;
-        slider.style.transform = `translateX(${offset}%)`;
-    }
+        const offset = -index * slider.clientWidth;
+        slider.style.transform = `translateX(${offset}px)`;
+    } 
 
     prevButton.addEventListener('click', () => {
         currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;

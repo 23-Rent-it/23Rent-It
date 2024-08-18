@@ -334,10 +334,10 @@ main {
 }
 
 .gallery-slider img {
-    min-width: 100%;
+    width: 100%;
     height: auto;
-    object-fit: cover;
-    z-index: 12; /* Ensure images are visible */
+    object-fit: contain;
+    display: block;
 }
 
 .gallery-nav {
