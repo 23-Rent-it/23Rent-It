@@ -136,11 +136,6 @@ main {
     white-space: pre-wrap; /* Beibehalten von Zeilenumbrüchen und Leerzeichen */
 }
 
-.tile-container h3 {
-    width: 100%;
-    height: 85%;
-}
-
 /* Kachel-Stile */
 .tile-container {
     display: grid;
@@ -305,7 +300,6 @@ main {
 }
 
 /* Restliche Stile */
-
 #home .overlay {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
