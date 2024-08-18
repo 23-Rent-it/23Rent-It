@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     function showSlide(index) {
-        slider.style.transform = `translateX(-${index * 100}%)`;
+        const offset = -index * 100;
+        slider.style.transform = `translateX(${offset}%)`;
     }
 
     prevButton.addEventListener('click', () => {

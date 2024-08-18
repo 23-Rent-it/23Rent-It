@@ -301,7 +301,7 @@ main {
 
 /* Swipe Gallery Styles */
 .swipe-gallery {
-    position: fixed;
+    position: absolute; /* Statisch am unteren Teil positioniert */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -310,7 +310,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10; /* Damit es über dem Rest der Seite liegt */
     box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5); /* Schatteneffekt */
 }
 
