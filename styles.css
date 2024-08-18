@@ -299,77 +299,38 @@ main {
     background-color: #005f9f; /* Helleres Blau beim Hover */
 }
 
-/* Swipe Gallery Styles */
+/* Ergänzungen zu deinem bestehenden CSS */
 .swipe-gallery {
-    position: static; /* Fixes position at the bottom of the page */
-    margin-top: -1200px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 80%; /* Covers 90% of the lower part of the page */
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10; /* Ensure it overlays other content */
+    margin-top: -600px; /* Anpassung entsprechend der Verkleinerung */
+    width: 50%;
+    height: 40%; /* Jetzt nur 40% der unteren Seite der Seite */
+    z-index: 10; /* Sicherstellen, dass es andere Inhalte überlagert */
     overflow: hidden;
 }
 
 .gallery-wrapper {
-    position: relative;
-    width: 80%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    z-index: 11; /* Ensure images and controls appear above background */
+    width: 50%; /* Breite auf 50% der vorherigen Größe reduziert */
+    height: 50%; /* Höhe auf 50% der vorherigen Größe reduziert */
+    z-index: 11; /* Sicherstellen, dass Bilder und Steuerungen sichtbar sind */
 }
 
 .gallery-slider {
-    display: flex;
-    transition: transform 0.5s ease;
     width: 100%;
-    height: 100%; /* Ensure images fill the gallery wrapper */
-    z-index: 12; /* Ensure images are visible */
-}
-
-.gallery-slider img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
+    height: 100%; /* Sicherstellen, dass die Bilder die Gallery Wrapper füllen */
+    z-index: 12; /* Sicherstellen, dass die Bilder sichtbar sind */
 }
 
 .gallery-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 31, 63, 0.8);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    z-index: 13; /* Ensure buttons are visible above images */
+    padding: 5px 10px; /* Verkleinerte Navigationstasten */
+    z-index: 13; /* Sicherstellen, dass die Tasten sichtbar über den Bildern sind */
 }
 
-.gallery-nav.prev {
-    left: 10px;
-}
-
-.gallery-nav.next {
-    right: 10px;
-}
-
-/* Responsive Anpassungen */
 @media (max-width: 768px) {
     .gallery-wrapper {
-        width: 95%;
-        height: 70%;
+        width: 90%; /* Etwas größere Anpassung für mobile Ansicht */
+        height: 35%; /* Höhe auch entsprechend anpassen */
     }
 }
-
 
 /* Restliche Stile */
 #home .overlay {
